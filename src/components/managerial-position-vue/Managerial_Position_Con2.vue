@@ -269,12 +269,7 @@ export default {
 
     };
   },
-  computed:{
-      getdataindex:function(){
-
-      }
-
-  },
+  
   methods: {
     onSubmit() {
       console.log("submit!");
@@ -305,20 +300,21 @@ export default {
      *
      */
 
-    open() {
-      this.$alert(`<strong>
-                      <div class="questionbox" style=" font-size:14px ;
-    color:#676a6c;display: flex;align-items: center; ">
-                        <span class="el-icon-question" style=" font-size:32px ;
-  color:#3498db;margin-right: 10px;"></span>
-                        确定删除这条信息吗？
-                      </div>
+      open() {
+        this.$alert(`<strong>
+                        <div class="questionbox" style=" font-size:14px ;
+      color:#676a6c;display: flex;align-items: center; ">
+                          <span class="el-icon-question" style=" font-size:32px ;
+    color:#3498db;margin-right: 10px;"></span>
+                          确定删除这条信息吗？
+                        </div>
 
-                  </strong>`, '提示系统', {
-        dangerouslyUseHTMLString: true
-      });
+                    </strong>`, '提示系统', {
+          dangerouslyUseHTMLString: true
+        });
+      },
     },
-  },
+
 
 };
 </script>
